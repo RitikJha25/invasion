@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+
+{% block title %}register{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<nav class="navbar-container">
+		<ul class="navbar-items">
+			<li id="nav-content1"><a href="#" id="content">Invasion</a></li>
+			<li id="nav-content"><a href="#" id="content">About</a></li>
+			<li id="nav-content"><a href="#" id="content">Contact</a></li>
+			<li id="nav-content"><a href="/login/" id="content">Login</a></li>
+
+		</ul>
+	</nav>
+<div class="register-form">	
+	<form method="post" action="/register/">
+		<h1>Signup here</h1>
+		<p>{{message}}</p>
+		{% csrf_token %}
+		{{form|crispy}}
+		<div style="text-align: center"><p>{{form.errors}}</p><br><button>register</button></div>
+		<p>Already have an account?Login <a href="/login/">Here</a></p>
+	</form>
+</div>
+{% endblock %}

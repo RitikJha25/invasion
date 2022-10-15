@@ -1,0 +1,423 @@
+*{
+	margin: 0;
+}
+
+.vertical-menu {
+  position: fixed;
+  width: auto; /* Set a width if you like */
+  height: 100vh;
+  text-align: ;
+  background-color: black;
+}
+.icon-container{
+  width: 100%;
+  margin: auto;
+
+  font-size: em;
+  background-color:transparent;
+
+}
+
+.icon-container form{
+  float: left;
+  width:25%;
+  padding-right: em;
+  background-color: ;
+}
+.icon-container strong{
+  float: left;
+  font-size:1.3em;
+}
+
+.icon-container .fa{
+  font-size:2em;
+  color: #5456f0;
+  background-color: ;
+  border:0;
+  float: left;
+}
+
+.icon-container .fa:hover{
+  color: #7e80e6;
+
+  border:0;
+  float: left;
+}
+
+
+.post-form{
+  background-color: #e4f2e8;
+  width: 70%;
+  padding: 1em;
+   font-size: 1.3em;
+
+  position: absolute;
+  left: 25%;
+  top:4%;
+}
+
+.post-form input{
+  padding: 0.2em;
+  margin: 0.4em;
+  width: 90%;
+   font-size: 1.1em;
+}
+.post-form button{
+  color: black;
+  text-align: center;
+  padding: 0.2em;
+  width: 40%;
+   font-size: 1.1em;
+}
+
+.profile-container{
+  float:right;
+  left: 0%;
+  top: 10%;
+}
+
+
+.user-container{
+  text-align: center;
+  background-color: #dae5f7;
+  padding: 2em;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 60%;
+  top: 50%;
+  z-index: -1;
+}
+.user-container img{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+}
+
+.user-container td{
+  background-color: white;
+  font-size: 2em;
+  border: solid black 1px;
+  padding: 0.4em;
+  text-align: center;
+}
+
+.user-container input{
+  background-color: white;
+  font-size: 1.3em;
+  border-radius: 30px;
+  border: solid black 1px;
+  padding-left: 0.7em;
+}
+.user-container label,button{
+  background-color:transparent;
+  font-size: 1.5em;
+  padding: 0.4em;
+}
+
+.user-container button{
+  background-color:;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.5em;
+  padding: 0.4em;
+}
+.profile-container a{
+  text-align: center;
+  float: left;
+  text-decoration: none;
+  color: black;
+  font-size: 4em;
+  left: 30%;
+  top: 5%;
+  padding-left:;
+  margin-right: 1em;
+}
+.profile-container a:hover{
+
+  color: green;
+  font-size: 4.2em;
+}
+
+
+.myblog-container{
+
+  padding: em;
+  position: absolute;
+  left: 20%;
+  top :5%;
+}
+.myblog-container table{
+  background-color: #fafac8;
+  width: 98%;
+  margin: 1em;
+}
+
+.myblog-container h1{
+  width: 90%;
+  letter-spacing: 3px;
+  background-color: #a15adb;
+  border-radius:0 100px 0px 100px ;
+  color: white;
+  margin: auto;
+  padding:0.3em 1em 0.3em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Cabin;
+}
+
+
+.myblog-container p{
+  padding: 1em;
+  font-size: 1.3em;
+  text-align: justify;
+  text-transform:;
+  font-family: arial;
+}
+.comment-container input{
+  float: left;
+  font-size: 1.4em;
+  width: 50%;
+  height: 30px;
+  padding: 0.5em;
+  margin-left: 0.5em;
+}
+.comment-container button{
+  float: left;
+  height: 50px;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #2f61eb;
+  font-size: 1.1em;
+}
+.comments{
+  padding: 2em;
+  margin: 2em;
+  background-color: #c8c9f7;
+
+}
+.comments h2{
+  margin:2%;
+  padding: 0.5em;
+  color: white;
+
+}
+.comments p{
+  margin:2%;
+  padding: 0.5em;
+  color: black;
+
+}
+.author h2{
+  float: right;
+  background-color: #8fb5b3;
+  padding: 0.3em 1em 0.3em 1em;
+  border-radius: 0 0px 0px 30px;
+  color: white;
+  margin: 0;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.author span{
+  font-family:"Lucida Console", Monaco, monospace;
+  padding: 0.3em;
+  margin: 0.2em;
+  text-transform: capitalize;
+}
+nav{
+  width: 20vw;
+}
+
+.vertical-menu a {
+  background-color: black; /* Grey background color */
+  color: white; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  font-family: 'Orbitron';
+  top:;
+  font-size: 2em;
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border:0;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.brand{
+	width:20%;
+	background-color: black;
+}
+.vertical-menu .active{
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  text-decoration: none;
+  color: white;
+  width: auto;
+  height: 10vh;
+  margin-left:;
+}
+.template{
+	position: fixed;
+  width: 20vw;
+	z-index: 0;
+}
+
+#nav-content1{
+		float: left;
+		background-color: black;
+		font-size: 2.5em;
+		font-family: 'Orbitron';
+		padding-left:2%;
+		margin-bottom: %;
+		}
+
+/*vertical menu mobile */
+
+#db{
+  display: none;
+}
+
+#db-content{
+  display: none;
+}
+.dropdown-button button{
+  
+}
+
+
+
+.vertical-menu-mobile{
+  display:;
+}
+.brand{
+  display: none;
+}
+.hide-icon{
+  display: block;
+}
+.hide-icon1{
+  display: none;
+}
+
+@media only screen and (max-width: 500px){
+
+/*vertical menu mobile */
+.template{
+  display: none;
+}
+.hide-icon{
+  display: none;
+}
+.hide-icon1{
+  display: block;
+  float: left;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.hide-icon1 a{
+color: black;
+font-size: 3em;
+text-decoration: none;
+margin: 10px;
+  
+}
+.brand{
+  display: block;
+    width:100%;
+  background-color: black;
+}
+.brand a{
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  font-family: orbitron;
+}
+nav{
+  width: 100vw;
+}
+#db{
+  display: block;
+}
+#db-content{
+  display: none;
+}
+.dropdown-button button{
+  position: absolute;
+  margin: 0.1em;
+  top: 0.01%;
+  left: 80%;
+  font-size: 1.9em;
+  color: white;
+  border-radius: 3px;
+  border: solid white 1px;
+}
+
+
+
+.vertical-menu-mobile{
+  z-index:;
+}
+
+.vertical-menu-mobile a {
+  background-color: black; /* Grey background color */
+  color: white; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  font-family: 'Orbitron';
+  top:;
+  font-size: 2em;
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border:0;
+}
+
+.vertical-menu-mobile a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+
+.vertical-menu-mobile .active{
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  text-decoration: none;
+  color: white;
+  width: auto;
+  height: 10vh;
+  margin-left:;
+}
+
+.post-form{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0.01%;
+  padding: 3px;
+}
+.post-form textarea{
+  width: 95vw;
+  margin: 0.2em;
+}
+
+.user-container{
+  left: 50%;
+  transform: all;
+  font-size: 0.7em;
+}
+.myblog-container{
+  position: absolute;
+  top: 10%;
+  left: 0.001%;
+  width:%;
+  font-size: 0.7em;
+  z-index: -1;
+}
+
+.myblog-container h1{
+  width: auto;
+  margin: 0.2em;
+}
+.myblog-container table{
+margin: 10px 0 0 0;
+}
+
+}
+

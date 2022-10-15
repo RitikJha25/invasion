@@ -1,0 +1,333 @@
+*{ 
+	margin:0;
+	position:; 
+}
+.dropdown-button, .vertical-menu-mobile{ display: none;} 
+
+img{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	}
+
+.navbar-container{
+		position: absolute;
+		top: 2%;
+		color: transparent;
+		width: 100%;
+		}
+
+		
+#nav-content{
+float: right;
+width: 20%;
+font-size: 2em;
+font-family: 'Orbitron';
+		}
+		
+
+#nav-content1{
+	float: left;
+	width: 20%;
+	font-size: 2.5em;
+	font-family: 'Orbitron';
+}
+		
+
+#content{
+		text-decoration: none;
+		text-align: center;
+		color: white;
+	}
+
+
+#nav-content:hover{
+	font-size: 2.2em;
+		}
+
+
+#title{
+		position: absolute;
+		top: 20%;
+		left:5%;
+		color: white;
+		font-size: 3em; 
+		font-family: 'Black Ops One';
+	}
+
+h1{
+	text-align: center;
+	color:#4287f5;
+	font-family: orbitron;
+	background-color: black;
+	padding:2%;
+	margin: 0; 
+	border-radius: 10px;
+		}
+
+.register-form{
+	background-color: white;
+	border-radius: 10px;
+	padding: 0.7em;
+	position: absolute;
+	left: 55%;
+	top:15%;
+	right: 5%;
+}
+
+.register-form li{
+	display: none;
+}
+
+.register-form p{
+	text-align: center;
+	color: grey;
+	font-size: 1.2em;
+}
+
+.register-form input{
+	color: black;
+	width: 90%;
+	padding: 0.2em;
+	margin: 0.5em;
+	font-size: 1.2em;
+}
+.register-form label{
+	color: black;
+	text-align: center;
+	margin: 1em;
+	font-size: 1.4em;
+}
+.register-form button{
+	padding:0.3em;
+	color: white;
+	background-color: #3cc259;
+	text-align: center;
+	margin: 1em;
+	border-radius: 10px;
+	border:solid #36a34e ;
+	font-size: 1.4em;
+}
+.register-form button:hover{
+	opacity: 0.8;
+}
+.login-form{
+	background-color: white;
+	border-radius: 10px;
+	padding: 0.7em;
+	position: absolute;
+	left: 60%;
+	top:25%;
+	right: 5%;
+}
+
+.login-form li{
+	display: none;
+}
+
+.login-form p{
+	text-align: center;
+	color: grey;
+	font-size: 1.2em;
+}
+
+.login-form input{
+	color: black;
+	width: 90%;
+	padding: 0.2em;
+	margin: 0.5em;
+	font-size: 1.2em;
+}
+.login-form label{
+	color: black;
+	text-align: center;
+	margin: 1em;
+	font-size: 1.4em;
+}
+.login-form button{
+	padding:0.3em;
+	color: white;
+	background-color: #3cc259;
+	text-align: center;
+	margin: 1em;
+	border-radius: 10px;
+	border:solid #36a34e ;
+	font-size: 1.4em;
+}
+.login-form button:hover{
+	opacity: 0.8;
+}
+
+
+@media screen  and (max-width : 500px){
+
+.navbar-container, #nav-content, #nav-content1, #content{
+	display: none;
+		}
+
+#title{
+		position: absolute;
+		top: 10%;
+		left:-10%;
+		margin:auto;
+		color: white;
+		font-size: 2.2em; 
+		font-family: 'Black Ops One';
+	}
+
+h1{
+	text-align: center;
+	color:#4287f5;
+	font-family: orbitron;
+	background-color: black;
+	padding:2%;
+	margin: 0; 
+	border-radius: 10px;
+		}
+
+.register-form{
+	background-color: white;
+	border-radius: 10px;
+	padding: 0.7em;
+	position: absolute;
+	left: 3%;
+	top:40%;
+	right: 3%;
+}	
+
+.register-form li{
+	display: none;
+}
+
+.register-form p{
+	text-align: center;
+	color: grey;
+	font-size: 1.2em;
+}
+
+.register-form input{
+	color: black;
+	width: 90%;
+	padding: 0.2em;
+	margin: 0.5em;
+	font-size: 1.2em;
+}
+.register-form label{
+	color: black;
+	text-align: center;
+	margin: 1em;
+	font-size: 1.4em;
+}
+.register-form button{
+	padding:0.3em;
+	color: white;
+	background-color: #3cc259;
+	text-align: center;
+	margin: 1em;
+	border-radius: 10px;
+	border:solid #36a34e ;
+	font-size: 1.4em;
+}
+.register-form button:hover{
+	opacity: 0.8;
+}
+.login-form{
+	background-color: white;
+	border-radius: 10px;
+	width: 90%;
+	padding: 0.7em;
+	position: absolute;
+	left: 2%;
+	top:40%;
+	right: 2%;
+}
+
+.login-form li{
+	display: none;
+}
+
+.login-form p{
+	text-align: center;
+	color: grey;
+	font-size: 1.2em;
+}
+
+.login-form input{
+	color: black;
+	width: 90%;
+	padding: 0.2em;
+	margin: 0.5em;
+	font-size: 1.2em;
+}
+.login-form label{
+	color: black;
+	text-align: center;
+	margin: 1em;
+	font-size: 1.4em;
+}
+.login-form button{
+	padding:0.3em;
+	color: white;
+	background-color: #3cc259;
+	text-align: center;
+	margin: 1em;
+	border-radius: 10px;
+	border:solid #36a34e ;
+	font-size: 1.4em;
+}
+.login-form button:hover{
+	opacity: 0.8;
+}
+
+
+/* dropdown*/
+
+.dropdown-button{
+	 display: block;
+}
+.dropdown-button button{
+ 
+  position: absolute;
+  background-color: black;
+  margin: 0.1em;
+  top: 0.01%;
+  left: 80%;
+  font-size: 2.1em;
+  color: white;
+  border-radius: 3px;
+  border: solid white 1px;
+}
+
+
+
+.vertical-menu-mobile{
+	display: block;
+}
+.vertical-menu-mobile a {
+  background-color: black; /* Grey background color */
+  color: white; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  font-family: 'Orbitron';
+  top:;
+  font-size: 2em;
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border:0;
+}
+
+.vertical-menu-mobile a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+
+.vertical-menu-mobile .active{
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  text-decoration: none;
+  color: white;
+  width: auto;
+  height: 10vh;
+  margin-left:;
+}
+
+}
+	

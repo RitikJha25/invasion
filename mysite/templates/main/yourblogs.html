@@ -1,0 +1,31 @@
+{% extends "main/user.html" %}
+{% load static %}
+
+{% block title %}YourBlogs{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="myblog-container">
+	{% if web_list %}
+
+  </table>
+      {% for us in web_list %}
+  			<table>
+      			<tr><td><h1>{{us.title}}</h1></td></tr>
+      			<tr><td><p>{{us.description}}<span>  </span><a href="{{us.reference}}"> Read more</a></p></td></tr>
+            <tr><td>
+              <form method="post" action="/delete_post/">
+                {% csrf_token %}
+                <button name = "delete_id" value="{{us.id}}"> x </button>
+              </form>
+            </td></tr>
+
+  			</table>
+      {% endfor %}
+
+    {% else %}
+      <p style="color: white;font-size: 2em;">No Data is available</p>
+    {% endif %}
+
+</div>
+{% endblock %}

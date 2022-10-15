@@ -1,0 +1,43 @@
+{% extends "main/user.html" %}
+{% load static %}
+
+{% block title %}{{user.username}}{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="hide-icon">
+<div class="profile-container">
+<a href="/editprofile/" class="fa fa-pencil-square-o"></a>
+<a href="{% url 'logout' %}" class="fa fa-sign-out"></a>
+</div>
+</div>
+<div class="hide-icon1">
+<a href="/editprofile/" class="fa fa-pencil-square-o"></a>
+<a href="{% url 'logout' %}" class="fa fa-sign-out"></a>
+</div>
+<div class="user-container">
+	{% if user.phonenumber is not NULL %}
+	<img src="{{user.image}}">
+	{%else%}
+	<img src="{% static 'avatar.png' %}">
+	{% endif %}
+	<table>
+		<tr>
+			<td>UserName</td>
+			<td>{{user.username}}</td>
+		</tr>
+		<tr>
+			<td>Email ID</td>
+			<td>{{user.email}}</td>
+		</tr>
+		<tr>
+			<td>FirstName</td>
+			<td>{{user.first_name}}</td>		
+		</tr>
+		<tr>
+			<td>LastName</td>
+			<td>{{user.last_name}}</td>
+		</tr>
+	</table>
+</div>
+{% endblock %}

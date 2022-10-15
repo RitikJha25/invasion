@@ -1,0 +1,27 @@
+{% extends "main/user.html" %}
+
+{% block title %}createblogs{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="post-form">
+<h1 style=
+"
+padding: 1em;
+margin-bottom: 0.5em;
+border-radius: 50px;
+color:#fcedf5 ;
+background-color:#5482cc ;
+ text-align:center;
+  font-family: orbitron;
+  font-size:2em;
+    ">Create Your Blog Here</h1>
+	<form method="post" action="/createblogs/">
+		{% csrf_token %}
+		{{form|crispy}}
+		<button type="submit">Post</button>
+	</form>
+</div>
+	
+{% endblock %}

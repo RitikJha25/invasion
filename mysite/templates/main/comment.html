@@ -1,0 +1,54 @@
+{% extends "main/user.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="myblog-container">
+	{% if web_list %}
+
+      {% for us in web_list %}
+      
+  			<table>
+  		<tr>
+  			<td>
+  <div class="comment-container">
+	<form method="post" class="like-button">
+    	{% csrf_token %}
+        {{form|crispy}}
+        <button name = "post_id" type="submit" value="{{us.id}}"> comment</button>
+    </form>
+
+</div>
+  			</td>
+  		</tr>		
+          <tr>
+            <td>
+          <div class="author"><h2>Created By  <span>{{us.user}}</span></h2>
+      <span>{{us.date}}</span></div></td>
+    </tr>
+      			<tr><td><h1>{{us.title}}</h1></td></tr>
+      			<tr><td><p>{{us.description}}<span>  </span><a href="{{us.reference}}"> Read more</a></p></td></tr>
+      	{% endfor %}
+      	{% endif %}
+     </table>
+     <div class="comments">
+    {% for c in comments %}
+    <table>
+    	<tr>
+    		<td><h2>{{c.user}}</h2></td>
+    	</tr>
+    	<tr>
+    		<td><span>{{c.comment_date}}</span></td>
+    	</tr>
+    	<tr>
+    		<td><p>{{c.comment}}</p></td>
+    	</tr>
+    	</table>
+    
+    {% endfor %}
+</div>
+
+</div>
+{% endblock %}

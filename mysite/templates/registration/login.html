@@ -1,0 +1,40 @@
+{% extends "main/base.html" %}
+
+{% block title %}Login{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<nav class="navbar-container">
+		<ul class="navbar-items">
+			<li id="nav-content1"><a href="#" id="content">Invasion</a></li>
+			<li id="nav-content"><a href="#" id="content">About</a></li>
+			<li id="nav-content"><a href="#" id="content">Contact</a></li>
+			<li id="nav-content"><a href="/register/" id="content">Register</a></li>
+
+		</ul>
+	</nav>
+<div class="dropdown-button" id="db"><button class="fa fa-bars" onclick="dropdown()"></button></div>
+    	<nav class="vertical-menu-mobile" id="db-content">
+			<a href="#">Invasion</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="/register/">Register</a>
+	</nav>
+
+
+<div class="login-form">
+	<form method="post" action="">
+		<h1>Login here</h1>
+		{% csrf_token %}
+		<label for="username">UserName*</label>
+		<input type="text" placeholder="username" name="username" required>
+		<label for="password">Password*</label>
+		<input type="password" placeholder="Enter Password" name="password" required>
+		<div style="text-align: center"><p>{{form.errors}}</p><br><button>Login</button><br>
+			{% for message in messages %}
+			{{message}}<div>
+			{%endfor%}
+		<p>Don't have an account?Create one <a href="/register/">here</a></p>
+	</form>
+</div>	
+{% endblock %}
+	

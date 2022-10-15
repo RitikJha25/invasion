@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <style type="text/css">
+    .image{
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+  </style>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Akronim|Black+Ops+One|Cabin|Dancing+Script|Orbitron|Trade+Winds&display|roboto =swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="{% static 'user.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>{% block title %}hello {% endblock %}</title>
+</head>
+<body>
+<div class="template">
+	<div class="vertical-menu">
+    <nav>
+    <a href="#" style="font-size: 3em; ">Invasion</a>
+    <a href = "/">Home</a>
+    <a href = "/profile/">Profile</a>
+    <a href = "/createblogs/">Create Blog</a>
+    <a href = "/yourblogs/">Your Blogs</a>
+    <a href = "/saved_post/">Saved Blogs</a>
+    <a href = "/liked_post/">Liked Blogs</a>
+    </nav>
+	</div>
+</div>
+<div class="brand">
+    <a href="#" style="font-size: 3em; ">Invasion</a>
+  </div>
+<div class="dropdown-button" id="db"><button class="fa fa-bars" onclick="dropdown()"></button></div>
+    <div class="vertical-menu-mobile" id="db-content">
+    <nav>
+
+    <a href = "/">Home</a>
+    <a href = "/profile/">Profile</a>
+    <a href = "/createblogs/">Create Blog</a>
+    <a href = "/yourblogs/">Your Blogs</a>
+    <a href = "/saved_post/">Saved Blogs</a>
+    <a href = "/liked_post/">Liked Blogs</a>
+    </nav>
+  </div>
+</div>
+{% block content %}
+{% endblock %}
+
+  
+
+
+                                            <!-- javascript function  --> 
+
+
+
+
+
+<script>
+      function dropdown() {
+      var a = document.getElementById("db");
+      var b = document.getElementById("db-content");
+      var c = document.getElementById("Login");
+      if (b.style.display === "none") {
+        b.style.display = "block";
+        c.style.display = "none"
+      }else {
+    b.style.display = "none";
+    c.style.display = "block"
+
+  }
+    }
+
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+{% load static %}
+<html> 
+<head> 
+	<link href="https://fonts.googleapis.com/css?family=Akronim|Black+Ops+One|Dancing+Script|Orbitron|Trade+Winds&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="{% static 'signup.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+
+	</style>
+	<title>{% block title %}base{% endblock %}</title>
+</head>
+<body>
+	<img src="{% static 'wall.jpg' %}">
+	<pre id="title">
+	Technology
+	that can 
+	not be neglected.
+	So accept it.
+</pre>
+
+{% block content %}
+{% endblock %}
+</div>
+
+
+<script>
+      function dropdown() {
+      var a = document.getElementById("db");
+      var b = document.getElementById("db-content");
+      var c = document.getElementById("Login");
+      if (b.style.display === "none") {
+        b.style.display = "block";
+        c.style.display = "none"
+      }else {
+    b.style.display = "none";
+    c.style.display = "block"
+
+  }
+    }
+
+  
+</script>
+</body>
+</html>
